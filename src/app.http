@@ -1,0 +1,14 @@
+############# req params
+GET http://localhost:3000/api/qa/get/6345345345234
+Content-Type: application/json
+
+########### REGISTER
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name":"AVVS",
+  "email":"avvs@yopmail.com",
+  "password":"Srinivas@8",
+  "phone":"7995643201"
+}
