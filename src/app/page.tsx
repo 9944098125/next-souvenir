@@ -4,8 +4,6 @@ import Heading from "@/Components/Heading";
 import React, { useCallback } from "react";
 import { Field, Form, Formik } from "formik";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import LoginButtons from "@/Components/LoginButtons";
-import { doCredentialsLogin } from "@/Redux/Actions/login";
 
 type LoginFormValues = {
 	email: string;
@@ -42,7 +40,7 @@ const Login = () => {
 	};
 
 	const submitForm = (values: LoginFormValues) => {
-		doCredentialsLogin(values);
+		console.log(values);
 	};
 
 	return (
@@ -117,7 +115,6 @@ const Login = () => {
 							</Form>
 						)}
 					</Formik>
-					<LoginButtons />
 				</div>
 			</div>
 		</React.Fragment>
